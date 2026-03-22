@@ -162,12 +162,12 @@ jobs:
 
             ### Installation
 
-            - **macOS**: Open the `.dmg`, drag Murmur to Applications. If blocked by Gatekeeper: right-click → Open.
-            - **Windows**: Run the installer `.exe`. If SmartScreen blocks it: click "More info" → "Run anyway".
+            - **macOS**: Open the `.dmg`, drag Murmur to Applications. If Gatekeeper blocks it: right-click → Open.
+            - **Windows**: The installer is not yet code-signed. SmartScreen will warn you — click **More info** → **Run anyway**. The app is fully open source and auditable.
             - **Linux (AppImage)**: `chmod +x Murmur-*.AppImage && ./Murmur-*.AppImage`
             - **Linux (deb)**: `sudo dpkg -i Murmur-*.deb`
 
-            > **WhatsApp** requires Google Chrome to be installed. Get it at https://www.google.com/chrome
+            > **WhatsApp** requires Google Chrome installed. Get it at https://www.google.com/chrome
 
             See [README](https://github.com/M-Hammad-Faisal/murmur#readme) for full setup guide.
           files: |

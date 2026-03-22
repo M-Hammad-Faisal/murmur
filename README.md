@@ -33,6 +33,21 @@ Head to [Releases](https://github.com/M-Hammad-Faisal/murmur/releases) and grab 
 
 > **WhatsApp** requires Google Chrome installed. [Download here](https://www.google.com/chrome).
 
+### Installation notes
+
+**macOS** — Open the `.dmg` and drag Murmur to Applications. If Gatekeeper blocks it: right-click the app → **Open**.
+
+**Windows** — The installer is not yet code-signed (open-source project). Windows SmartScreen will show a warning:
+
+1. Click **More info**
+2. Click **Run anyway**
+
+The app is fully open source — you can audit every line at [github.com/M-Hammad-Faisal/murmur](https://github.com/M-Hammad-Faisal/murmur).
+
+**Linux (AppImage)** — `chmod +x Murmur-x.x.x.AppImage && ./Murmur-x.x.x.AppImage`
+
+**Linux (deb)** — `sudo dpkg -i Murmur-x.x.x.deb`
+
 ---
 
 ## Local Development Setup
