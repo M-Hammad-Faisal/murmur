@@ -28,13 +28,20 @@ async function startServer(): Promise<void> {
     // Point puppeteer at its cache so it finds its own downloaded Chrome
     process.env['PUPPETEER_CACHE_DIR'] = puppeteerCacheDir
 
-    // Also check well-known system Chrome locations
+    // Also check well-known system Chrome locations (macOS, Windows, Linux)
     const candidates: string[] = [
+      // macOS
       '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
       '/Applications/Chromium.app/Contents/MacOS/Chromium',
       path.join(homeDir, 'Applications/Google Chrome.app/Contents/MacOS/Google Chrome'),
+      // Windows — Program Files (x64 and x86), and per-user AppData
+      'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+      'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
+      path.join(homeDir, 'AppData', 'Local', 'Google', 'Chrome', 'Application', 'chrome.exe'),
+      // Linux
       '/usr/bin/google-chrome',
       '/usr/bin/chromium-browser',
+      '/usr/bin/chromium',
     ]
     for (const c of candidates) {
       if (fs.existsSync(c)) {
@@ -72,6 +79,9 @@ async function startServer(): Promise<void> {
               'Google Chrome for Testing',
             ),
             path.join(puppeteerCacheDir, 'chrome', d, 'chrome-linux64', 'chrome'),
+            // Windows
+            path.join(puppeteerCacheDir, 'chrome', d, 'chrome-win64', 'chrome.exe'),
+            path.join(puppeteerCacheDir, 'chrome', d, 'chrome-win32', 'chrome.exe'),
           ]
           for (const p of candidates2) {
             if (fs.existsSync(p)) return p
