@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murmur — Personal Broadcaster</title>
+    <meta
+      name="description"
+      content="Send bulk WhatsApp messages and emails from your own accounts. No SaaS, no subscriptions, no data leaving your machine. Open source, forever free."
+    />
+    <meta property="og:title" content="Murmur — Personal Broadcaster" />
+    <meta
+      property="og:description"
+      content="Send bulk WhatsApp & Gmail messages from your own accounts. Open source, forever free."
+    />
+    <meta property="og:url" content="https://m-hammad-faisal.github.io/murmur" />
+    <meta name="theme-color" content="#6366f1" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <a class="nav-logo" href="#">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="14" fill="#6366f1" />
+            <path
+              d="M8 10c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-3l-3 3v-3H10a2 2 0 0 1-2-2v-5z"
+              fill="white"
+            />
+          </svg>
+          Murmur
+        </a>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#docs">Docs</a>
+          <a href="#download">Download</a>
+          <a
+            href="https://github.com/M-Hammad-Faisal/murmur"
+            target="_blank"
+            class="nav-gh"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+              />
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-badge">✦ Open Source · Forever Free · No SaaS</div>
+      <h1 class="hero-title">
+        Send bulk messages<br />
+        from <span class="grad">your own accounts</span>
+      </h1>
+      <p class="hero-sub">
+        Murmur is a desktop app that sends personalized WhatsApp messages and
+        emails from <strong>your</strong> number and <strong>your</strong> Gmail — no
+        third-party servers, no data leaving your machine.
+      </p>
+      <div class="hero-cta">
+        <a href="#download" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download Free
+        </a>
+        <a href="https://github.com/M-Hammad-Faisal/murmur" target="_blank" class="btn btn-ghost">
+          View on GitHub
+        </a>
+      </div>
+      <div class="hero-meta">
+        <span>🖥 macOS · Windows · Linux</span>
+        <span>·</span>
+        <span>MIT License</span>
+        <span>·</span>
+        <span>No account needed</span>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust">
+      <div class="trust-inner">
+        <div class="trust-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Your credentials stay local
+        </div>
+        <div class="trust-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          No cloud, no APIs, no middlemen
+        </div>
+        <div class="trust-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Your WhatsApp number sends
+        </div>
+        <div class="trust-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Your Gmail account sends
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-label">Features</div>
+        <h2 class="section-title">Everything you need. Nothing you don't.</h2>
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <div class="feature-icon" style="background:#1a1f2e;color:#25D366">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            </div>
+            <h3>WhatsApp Broadcasting</h3>
+            <p>Connect once via QR scan. Murmur uses your existing WhatsApp session to send — no API keys, no fees, no ban risk from bulk APIs.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" style="background:#1a1f2e;color:#EA4335">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+            </div>
+            <h3>Gmail Broadcasting</h3>
+            <p>Add your Gmail App Password and send rich personalized emails. Full subject + body support with <code>{{variable}}</code> substitution.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" style="background:#1a1f2e;color:#6366f1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>CSV Contact Import</h3>
+            <p>Upload any CSV with name, phone, email, tag, birthday columns. Extra columns become <code>{{variables}}</code> automatically. Filter by group or hand-pick contacts.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" style="background:#1a1f2e;color:#f59e0b">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Scheduling</h3>
+            <p>Send now, schedule for later, or set up recurring sends — daily, weekly, monthly, or on birthdays. Runs silently from the system tray.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" style="background:#1a1f2e;color:#10b981">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+            </div>
+            <h3>Live Logs & Retry</h3>
+            <p>Track every send in real time — delivered, failed, pending. One-click retry for failed messages. Full send history with timestamps.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" style="background:#1a1f2e;color:#8b5cf6">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>100% Local & Private</h3>
+            <p>SQLite database on your machine. No external servers. No analytics. No telemetry. Your contacts, messages, and credentials never leave your device.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-label">How it works</div>
+        <h2 class="section-title">Up and running in minutes</h2>
+        <div class="steps">
+
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h3>Connect your accounts</h3>
+              <p>Scan a QR code to link your WhatsApp, and enter your Gmail App Password. Both stay on your machine — Murmur never sees your credentials.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h3>Import contacts from CSV</h3>
+              <p>Upload a <code>.csv</code> file with your contacts. Murmur reads name, phone, email, tag, and any extra columns you add as template variables.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h3>Compose your message</h3>
+              <p>Write your message using <code>{{name}}</code>, <code>{{tag}}</code>, or any custom column as a variable. Preview exactly what each recipient will receive.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <h3>Schedule and send</h3>
+              <p>Send immediately, schedule for a specific time, or set up a recurring broadcast. Watch live progress or check back in the logs later.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCS -->
+    <section class="section" id="docs">
+      <div class="container">
+        <div class="section-label">Documentation</div>
+        <h2 class="section-title">Everything you need to know</h2>
+
+        <div class="docs-grid">
+
+          <!-- CSV Format -->
+          <div class="doc-card">
+            <h3>CSV Format</h3>
+            <p>Your CSV must have at least a <code>name</code> column. Add others as needed:</p>
+            <div class="code-block">
+              <pre>name,phone,email,tag,birthday,company
+Ahmed Khan,+923001234567,ahmed@gmail.com,client,1990-03-15,Acme Corp
+Sara Ali,+923009876543,sara@email.com,family,1988-07-22,</pre>
+            </div>
+            <ul class="doc-list">
+              <li><code>name</code> — required</li>
+              <li><code>phone</code> — required for WhatsApp (<code>+country code</code> format)</li>
+              <li><code>email</code> — required for Gmail</li>
+              <li><code>tag</code> — optional, used to filter/group contacts</li>
+              <li><code>birthday</code> — optional, enables birthday scheduling (<code>YYYY-MM-DD</code>)</li>
+              <li>Any extra column (e.g. <code>company</code>) becomes a <code>{{variable}}</code></li>
+            </ul>
+          </div>
+
+          <!-- Variables -->
+          <div class="doc-card">
+            <h3>Message Variables</h3>
+            <p>Use <code>{{double braces}}</code> in your message body or subject to personalize for each recipient:</p>
+            <div class="code-block">
+              <pre>Hi {{name}},
+
+Just wanted to reach out to you
+at {{company}}. Hope you're doing well!
+
+Best,
+Your Name</pre>
+            </div>
+            <ul class="doc-list">
+              <li><code>{{name}}</code> — contact's name</li>
+              <li><code>{{email}}</code> — contact's email</li>
+              <li><code>{{tag}}</code> — contact's group/tag</li>
+              <li><code>{{birthday}}</code> — contact's birthday</li>
+              <li><code>{{column_name}}</code> — any custom CSV column</li>
+            </ul>
+          </div>
+
+          <!-- Gmail Setup -->
+          <div class="doc-card">
+            <h3>Gmail Setup</h3>
+            <p>Murmur uses a Gmail App Password — not your real password. This is safer and works even with 2FA.</p>
+            <ol class="doc-list doc-list-ol">
+              <li>Go to <strong>myaccount.google.com</strong></li>
+              <li>Navigate to <strong>Security → 2-Step Verification</strong> and enable it</li>
+              <li>Then go to <strong>Security → App Passwords</strong></li>
+              <li>Create a new App Password for "Mail"</li>
+              <li>Paste the 16-character password into Murmur</li>
+            </ol>
+          </div>
+
+          <!-- WhatsApp Setup -->
+          <div class="doc-card">
+            <h3>WhatsApp Setup</h3>
+            <p>Murmur connects to WhatsApp Web using your phone — the same way the browser version works.</p>
+            <ol class="doc-list doc-list-ol">
+              <li>Click <strong>Connect WhatsApp</strong> in Murmur</li>
+              <li>Open WhatsApp on your phone</li>
+              <li>Tap <strong>Linked Devices → Link a Device</strong></li>
+              <li>Scan the QR code shown in Murmur</li>
+              <li>You're connected — the session persists across restarts</li>
+            </ol>
+            <p class="doc-note">⚠️ Requires <a href="https://www.google.com/chrome" target="_blank">Google Chrome</a> to be installed on your machine.</p>
+          </div>
+
+          <!-- Scheduling -->
+          <div class="doc-card">
+            <h3>Scheduling Options</h3>
+            <ul class="doc-list">
+              <li><strong>Send Now</strong> — fires immediately</li>
+              <li><strong>Scheduled</strong> — pick a date &amp; time</li>
+              <li><strong>Daily</strong> — repeats every day at the set time</li>
+              <li><strong>Weekly</strong> — repeats on the same day each week</li>
+              <li><strong>Monthly</strong> — repeats on the same date each month</li>
+              <li><strong>Birthday Mode</strong> — sends each contact a message on their birthday (reads the <code>birthday</code> column)</li>
+            </ul>
+          </div>
+
+          <!-- Requirements -->
+          <div class="doc-card">
+            <h3>System Requirements</h3>
+            <ul class="doc-list">
+              <li><strong>macOS</strong> 12+ (Apple Silicon or Intel)</li>
+              <li><strong>Windows</strong> 10 / 11 (x64 or 32-bit)</li>
+              <li><strong>Linux</strong> — AppImage (any distro) or .deb (Debian/Ubuntu)</li>
+              <li><strong>Google Chrome</strong> — required for WhatsApp (for Puppeteer)</li>
+              <li>~300 MB disk space</li>
+              <li>Internet connection for sending</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+      <div class="container container-narrow">
+        <div class="section-label">FAQ</div>
+        <h2 class="section-title">Common questions</h2>
+        <div class="faq">
+
+          <details class="faq-item">
+            <summary>Is this safe to use? Will my WhatsApp get banned?</summary>
+            <p>Murmur uses the same technology as WhatsApp Web — your number connects via a QR scan. The key risk factor is sending too fast. Murmur enforces a minimum delay between messages (default 5 seconds) to mimic human behaviour. Avoid sending to thousands of people at once.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Where is my data stored?</summary>
+            <p>Everything — contacts, credentials, logs, message history — is stored in a local SQLite database on your machine (<code>~/Library/Application Support/Murmur/murmur.db</code> on Mac, <code>%APPDATA%/Murmur</code> on Windows). Nothing is ever sent to a server.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Does it work when my computer is off / asleep?</summary>
+            <p>No. Murmur runs locally — if your machine is off or the app is closed, scheduled sends won't fire. Keep the app running in the system tray for scheduled broadcasts.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I send to thousands of contacts?</summary>
+            <p>Technically yes, but WhatsApp has rate limits. For large lists, use a generous delay (10s+) and split into multiple smaller broadcasts. For Gmail, Google's free tier allows ~500 emails/day.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do I need to pay for anything?</summary>
+            <p>No. Murmur is MIT-licensed open source software. It's free forever. No subscriptions, no in-app purchases, no usage limits imposed by Murmur itself.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I contribute or request features?</summary>
+            <p>Yes! Open an issue or pull request on <a href="https://github.com/M-Hammad-Faisal/murmur" target="_blank">GitHub</a>. See <a href="https://github.com/M-Hammad-Faisal/murmur/blob/main/CONTRIBUTING.md" target="_blank">CONTRIBUTING.md</a> for guidelines.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section class="section" id="download">
+      <div class="container container-narrow">
+        <div class="section-label">Download</div>
+        <h2 class="section-title">Get Murmur</h2>
+        <p class="section-sub">Free, open source, no account needed. Always the latest version on GitHub Releases.</p>
+
+        <div class="download-grid">
+          <a href="https://github.com/M-Hammad-Faisal/murmur/releases/latest" target="_blank" class="download-card">
+            <div class="dl-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            </div>
+            <div class="dl-info">
+              <strong>macOS</strong>
+              <span>Universal (Apple Silicon + Intel)</span>
+            </div>
+            <svg class="dl-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+
+          <a href="https://github.com/M-Hammad-Faisal/murmur/releases/latest" target="_blank" class="download-card">
+            <div class="dl-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M0 12.402l6.839-1.03.004 6.62-6.843.04zm6.835 6.488l.006 6.626L.006 24l-.002-6.65zm.882-7.527l9.326-1.353V17.9l-9.326.09zm9.32 7.198l-.007 6.542-9.308-1.317-.01-5.263zM24 1.362l-.004 9.545-6.73-.096V3.89zm-6.728 9.21l6.73.08V24l-6.73-.016z"/></svg>
+            </div>
+            <div class="dl-info">
+              <strong>Windows</strong>
+              <span>x64 &amp; 32-bit installer</span>
+            </div>
+            <svg class="dl-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+
+          <a href="https://github.com/M-Hammad-Faisal/murmur/releases/latest" target="_blank" class="download-card">
+            <div class="dl-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12.504 0c-.155 0-.315.008-.48.021-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.424.424 0 0 0 .11.135 9.405 9.405 0 0 0-.623 3.51c0 5.19 4.27 9.396 9.539 9.396 5.27 0 9.54-4.207 9.54-9.396 0-1.263-.25-2.468-.7-3.566.2-.181.33-.43.345-.711.108-2.045-.87-3.847-1.361-5.312-.232-.678-.27-1.379-.033-2.024C23.466 2.99 19.114.454 12.504 0zm.546 2.418c1.907.33 3.677 1.077 5.104 2.243-1.588.637-2.693 1.987-2.946 3.63a4.1 4.1 0 0 0 .016.978c.126.88.534 1.708 1.174 2.355-1.874.456-3.854.228-5.544-.651a6.034 6.034 0 0 0-.944-3.244 4.066 4.066 0 0 1 3.14-5.311zm-3.076 2.686c.12 1.05-.256 2.003-.99 2.67-1.166-1.104-1.698-2.744-1.36-4.326a6.93 6.93 0 0 1 2.35 1.656zm.62 4.53c2.02.84 4.25.967 6.355.358-.056.217-.085.44-.085.667 0 1.598.915 2.985 2.25 3.692-1.586 3.285-5.098 5.29-8.814 5.29C5.986 19.64 2.3 16.04 2.3 11.6c0-.696.087-1.374.253-2.025a7.18 7.18 0 0 0 7.54-1.94z"/></svg>
+            </div>
+            <div class="dl-info">
+              <strong>Linux</strong>
+              <span>AppImage &amp; .deb (Debian/Ubuntu)</span>
+            </div>
+            <svg class="dl-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+
+        <p class="dl-note">
+          Or build from source:
+          <a href="https://github.com/M-Hammad-Faisal/murmur#local-development-setup" target="_blank">see the README</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="14" fill="#6366f1" />
+            <path d="M8 10c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-3l-3 3v-3H10a2 2 0 0 1-2-2v-5z" fill="white"/>
+          </svg>
+          <span>Murmur</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/M-Hammad-Faisal/murmur" target="_blank">GitHub</a>
+          <a href="https://github.com/M-Hammad-Faisal/murmur/releases" target="_blank">Releases</a>
+          <a href="https://github.com/M-Hammad-Faisal/murmur/issues" target="_blank">Issues</a>
+          <a href="https://github.com/M-Hammad-Faisal/murmur/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a>
+          <a href="https://github.com/M-Hammad-Faisal/murmur/blob/main/LICENSE" target="_blank">MIT License</a>
+        </div>
+        <p class="footer-copy">
+          Built by <a href="https://github.com/M-Hammad-Faisal" target="_blank">Muhammad Hammad Faisal</a>
+          · <a href="https://www.youtube.com/@code_your_magic" target="_blank">@code_your_magic</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
