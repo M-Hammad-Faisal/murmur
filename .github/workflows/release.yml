@@ -155,7 +155,7 @@ jobs:
 
             | Platform | File | Notes |
             |----------|------|-------|
-            | macOS | `Murmur-*-arm64.dmg` | Apple Silicon (M1/M2/M3/M4) · Intel via Rosetta 2 |
+            | macOS | `Murmur-*-arm64.dmg` | Apple Silicon + Intel |
             | Windows | `Murmur.Setup.*.exe` | Windows 10/11 x64 |
             | Linux (AppImage) | `Murmur-*.AppImage` | Any distro — make executable & run |
             | Linux (Debian/Ubuntu) | `Murmur-*.deb` | `sudo dpkg -i Murmur-*.deb` |
