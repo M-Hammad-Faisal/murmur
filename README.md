@@ -24,14 +24,13 @@ Murmur is a desktop app that lets you send personalized bulk messages from **you
 
 Head to [Releases](https://github.com/M-Hammad-Faisal/murmur/releases) and grab the latest:
 
-| Platform                          | File                          |
-| --------------------------------- | ----------------------------- |
-| macOS Apple Silicon (M1/M2/M3/M4) | `Murmur-x.x.x-arm64.dmg`      |
-| macOS Intel                       | `Murmur-x.x.x-x64.dmg`        |
-| Windows 64-bit                    | `Murmur-x.x.x-Setup.exe`      |
-| Windows 32-bit                    | `Murmur-x.x.x-ia32-Setup.exe` |
-| Linux (any distro)                | `Murmur-x.x.x.AppImage`       |
-| Linux Debian/Ubuntu               | `murmur_x.x.x.deb`            |
+| Platform                      | File                          |
+| ----------------------------- | ----------------------------- |
+| macOS (Apple Silicon + Intel) | `Murmur-x.x.x-universal.dmg`  |
+| Windows 64-bit                | `Murmur-x.x.x-Setup.exe`      |
+| Windows 32-bit                | `Murmur-x.x.x-ia32-Setup.exe` |
+| Linux (any distro)            | `Murmur-x.x.x.AppImage`       |
+| Linux Debian/Ubuntu           | `Murmur-x.x.x.deb`            |
 
 > **WhatsApp** requires Google Chrome installed. [Download here](https://www.google.com/chrome).
 

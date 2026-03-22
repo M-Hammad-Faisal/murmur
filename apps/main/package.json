@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --max-warnings 0",
     "dist:mac": "pnpm build && electron-builder --mac --arm64 --publish never",
-    "dist:mac:x64": "pnpm build && electron-builder --mac --x64 --publish never",
+    "dist:mac:universal": "pnpm build && electron-builder --mac --universal --publish never",
     "dist:win": "pnpm build && electron-builder --win --x64 --ia32 --publish never",
     "dist:linux": "pnpm build && electron-builder --linux --publish never",
     "postinstall": "electron-rebuild -f -w better-sqlite3"
@@ -68,7 +68,7 @@
         {
           "target": "dmg",
           "arch": [
-            "arm64"
+            "universal"
           ]
         }
       ],
