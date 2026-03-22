@@ -27,8 +27,7 @@ Head to [Releases](https://github.com/M-Hammad-Faisal/murmur/releases) and grab 
 | Platform                      | File                                                |
 | ----------------------------- | --------------------------------------------------- |
 | macOS (Apple Silicon + Intel) | `Murmur-x.x.x-arm64.dmg` (Intel: install Rosetta 2) |
-| Windows 64-bit                | `Murmur-x.x.x-Setup.exe`                            |
-| Windows 32-bit                | `Murmur-x.x.x-ia32-Setup.exe`                       |
+| Windows 64-bit                | `Murmur.Setup.x.x.x.exe`                            |
 | Linux (any distro)            | `Murmur-x.x.x.AppImage`                             |
 | Linux Debian/Ubuntu           | `Murmur-x.x.x.deb`                                  |
 
