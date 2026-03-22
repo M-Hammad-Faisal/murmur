@@ -96,6 +96,8 @@
       "icon": "resources/icons/icon.ico"
     },
     "linux": {
+      "executableName": "murmur",
+      "artifactName": "${productName}-${version}.${ext}",
       "target": [
         {
           "target": "AppImage",
