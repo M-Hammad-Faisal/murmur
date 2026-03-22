@@ -1,0 +1,124 @@
+{
+  "name": "@murmur/main",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Murmur — Personal Broadcaster",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter @murmur/renderer dev\" \"wait-on http://localhost:3000 && electron .\"",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --max-warnings 0",
+    "dist:mac": "pnpm build && electron-builder --mac --arm64",
+    "dist:mac:x64": "pnpm build && electron-builder --mac --x64",
+    "dist:win": "pnpm build && electron-builder --win --x64 --ia32",
+    "dist:linux": "pnpm build && electron-builder --linux",
+    "postinstall": "electron-rebuild -f -w better-sqlite3"
+  },
+  "dependencies": {
+    "@murmur/server": "workspace:*",
+    "@murmur/types": "workspace:*"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^4.0.3",
+    "@types/node": "^24.12.0",
+    "concurrently": "^9.2.1",
+    "electron": "^41.0.3",
+    "electron-builder": "^26.8.1",
+    "typescript": "^5.9.3",
+    "wait-on": "^9.0.4"
+  },
+  "build": {
+    "appId": "com.murmur.broadcaster",
+    "productName": "Murmur",
+    "copyright": "Copyright © 2026 Muhammad Hammad Faisal",
+    "asar": true,
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "node_modules/**/*",
+      "resources/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "../../apps/renderer/out",
+        "to": "renderer",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "../../apps/server/dist",
+        "to": "server",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64"
+          ]
+        }
+      ],
+      "icon": "resources/icons/icon.icns",
+      "category": "public.app-category.productivity",
+      "darkModeSupport": true
+    },
+    "dmg": {
+      "title": "Murmur",
+      "window": {
+        "width": 540,
+        "height": 380
+      }
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "icon": "resources/icons/icon.ico"
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "resources/icons/icon.png",
+      "category": "Utility",
+      "synopsis": "Personal bulk broadcaster for WhatsApp and Gmail"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Murmur"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "M-Hammad-Faisal",
+      "repo": "murmur"
+    }
+  }
+}
