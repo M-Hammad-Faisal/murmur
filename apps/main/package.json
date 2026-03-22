@@ -3,16 +3,22 @@
   "version": "1.0.0",
   "private": true,
   "description": "Murmur — Personal Broadcaster",
+  "homepage": "https://github.com/M-Hammad-Faisal/murmur",
+  "author": {
+    "name": "Muhammad Hammad Faisal",
+    "email": "hammaddev.work@gmail.com",
+    "url": "https://github.com/M-Hammad-Faisal"
+  },
   "main": "dist/main.js",
   "scripts": {
     "dev": "concurrently \"pnpm --filter @murmur/renderer dev\" \"wait-on http://localhost:3000 && electron .\"",
     "build": "tsc",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --max-warnings 0",
-    "dist:mac": "pnpm build && electron-builder --mac --arm64",
-    "dist:mac:x64": "pnpm build && electron-builder --mac --x64",
-    "dist:win": "pnpm build && electron-builder --win --x64 --ia32",
-    "dist:linux": "pnpm build && electron-builder --linux",
+    "dist:mac": "pnpm build && electron-builder --mac --arm64 --publish never",
+    "dist:mac:x64": "pnpm build && electron-builder --mac --x64 --publish never",
+    "dist:win": "pnpm build && electron-builder --win --x64 --ia32 --publish never",
+    "dist:linux": "pnpm build && electron-builder --linux --publish never",
     "postinstall": "electron-rebuild -f -w better-sqlite3"
   },
   "dependencies": {
