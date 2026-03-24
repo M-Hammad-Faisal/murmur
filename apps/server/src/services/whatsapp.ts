@@ -118,6 +118,14 @@ export function initWhatsApp(): void {
         // Stability on macOS without a real display
         '--disable-software-rasterizer',
         '--no-zygote',
+        // Memory optimizations — reduce Chrome RAM footprint
+        '--disable-gpu',
+        '--disable-accelerated-2d-canvas',
+        '--disable-accelerated-video-decode',
+        '--js-flags=--max-old-space-size=512',
+        '--disk-cache-size=1',
+        '--media-cache-size=1',
+        '--renderer-process-limit=1',
       ],
     },
   })

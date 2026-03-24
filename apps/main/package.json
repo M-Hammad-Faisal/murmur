@@ -39,13 +39,25 @@
     "productName": "Murmur",
     "copyright": "Copyright © 2026 Muhammad Hammad Faisal",
     "asar": true,
+    "asarUnpack": [
+      "**/node_modules/better-sqlite3/**/*",
+      "**/node_modules/@electron/rebuild/**/*"
+    ],
+    "compression": "maximum",
     "directories": {
       "output": "release"
     },
     "files": [
       "dist/**/*",
       "node_modules/**/*",
-      "resources/**/*"
+      "resources/**/*",
+      "!**/node_modules/*/{README,README.md,CHANGELOG.md,CONTRIBUTING.md,LICENSE,license}",
+      "!**/node_modules/*/{test,tests,__tests__,__mocks__,spec,specs,example,examples,coverage}",
+      "!**/node_modules/**/*.{d.ts,map}",
+      "!**/node_modules/.bin",
+      "!**/node_modules/**/{.eslintrc,.eslintignore,.prettierrc,.editorconfig}",
+      "!**/node_modules/**/{appveyor.yml,.travis.yml,circle.yml,.github}",
+      "!**/{.DS_Store,.git,.gitignore,.gitattributes,*.log}"
     ],
     "extraResources": [
       {

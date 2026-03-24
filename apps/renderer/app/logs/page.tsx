@@ -105,7 +105,7 @@ export default function LogsPage() {
               strokeLinejoin="round"
             />
           </svg>
-          <div className="stat-num">{stats.sent}</div>
+          <div className="stat-num">{stats.sent ?? 0}</div>
           <div className="stat-lbl">Sent total</div>
         </div>
         <div className="stat-box stat-red">
@@ -118,7 +118,7 @@ export default function LogsPage() {
               strokeLinecap="round"
             />
           </svg>
-          <div className="stat-num">{stats.failed}</div>
+          <div className="stat-num">{stats.failed ?? 0}</div>
           <div className="stat-lbl">Failed</div>
         </div>
         <div className="stat-box stat-blue">
@@ -132,7 +132,7 @@ export default function LogsPage() {
               strokeLinejoin="round"
             />
           </svg>
-          <div className="stat-num">{stats.today}</div>
+          <div className="stat-num">{stats.today ?? 0}</div>
           <div className="stat-lbl">Today</div>
         </div>
       </div>

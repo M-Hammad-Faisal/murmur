@@ -35,9 +35,9 @@ router.get('/stats', (_req, res) => {
     .prepare(
       `SELECT
          COUNT(*) as total,
-         SUM(CASE WHEN status = 'sent'    THEN 1 ELSE 0 END) as sent,
-         SUM(CASE WHEN status = 'failed'  THEN 1 ELSE 0 END) as failed,
-         SUM(CASE WHEN status = 'pending' THEN 1 ELSE 0 END) as pending
+         COALESCE(SUM(CASE WHEN status = 'sent'    THEN 1 ELSE 0 END), 0) as sent,
+         COALESCE(SUM(CASE WHEN status = 'failed'  THEN 1 ELSE 0 END), 0) as failed,
+         COALESCE(SUM(CASE WHEN status = 'pending' THEN 1 ELSE 0 END), 0) as pending
        FROM send_logs`,
     )
     .get() as Omit<LogStats, 'today'>
